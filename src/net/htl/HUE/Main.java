@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package net.htl.HÜ;
+package net.htl.HUE;
 
 /**
  *
@@ -16,6 +16,8 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        EratosthenesPrimeSieve e = new EratosthenesPrimeSieve(10);
+        e.printPrimes();
     }
 
 }

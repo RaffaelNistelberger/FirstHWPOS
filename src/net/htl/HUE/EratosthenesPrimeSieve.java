@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package net.htl.HÜ;
+package net.htl.HUE;
 
 /**
  *
@@ -11,14 +11,25 @@ package net.htl.HÜ;
  */
 public class EratosthenesPrimeSieve implements PrimeSieve {
 
+    private int graenze;
+
+    public EratosthenesPrimeSieve(int i) {
+        graenze = i;
+    }
+
     @Override
     public boolean isPrime(int p) {
-
+        for (int i = 2; i < p; i++) {
+            int a = i % 1;
+            if (a == 0) {
+                return false;
+            }
+        }
+        return true;
     }
 
     @Override
     public void printPrimes() {
 
     }
-
 }
