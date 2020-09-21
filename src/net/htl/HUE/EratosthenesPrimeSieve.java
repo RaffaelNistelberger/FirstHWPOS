@@ -20,7 +20,7 @@ public class EratosthenesPrimeSieve implements PrimeSieve {
     @Override
     public boolean isPrime(int p) {
         for (int i = 2; i < p; i++) {
-            int a = i % 1;
+            int a = p % i;
             if (a == 0) {
                 return false;
             }
@@ -30,6 +30,10 @@ public class EratosthenesPrimeSieve implements PrimeSieve {
 
     @Override
     public void printPrimes() {
-
+        for (int i = 1; i <= graenze; i++) {
+            if (isPrime(i) == true) {
+                System.out.println(i);
+            }
+        }
     }
 }

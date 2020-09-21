@@ -18,6 +18,7 @@ public class Main {
         // TODO code application logic here
         EratosthenesPrimeSieve e = new EratosthenesPrimeSieve(10);
         e.printPrimes();
+
     }
 
 }
