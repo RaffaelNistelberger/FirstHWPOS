@@ -36,4 +36,19 @@ public class EratosthenesPrimeSieve implements PrimeSieve {
             }
         }
     }
+
+    public void searchAmount(int obergrenze) {
+        for (int i = 4; i <= obergrenze; i++) {
+            if (i % 2 == 0) {
+                for (int j = 2; j < i; j++) {
+                    int rest = i - j;
+                    if (isPrime(rest) == true) {
+                        System.out.println(i + " summe : " + i + " = " + j + "+" + rest);
+                        break;
+                    }
+                }
+
+            }
+        }
+    }
 }
