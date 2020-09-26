@@ -20,6 +20,11 @@ public class Main {
         System.out.println(e.isPrime(10));
         e.printPrimes();
 
+        e.searchAmount(10);
+
+        System.out.println("NEW LINE");
+
+        e.searchAmount(20);
     }
 
 }
